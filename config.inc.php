@@ -624,6 +624,9 @@ $tlCfg->gui->planView->pagination->length = '[20, 40, 60, -1], [20, 40, 60, "All
 $tlCfg->gui->planView->itemQtyForTopButton = 10;
 
 $tlCfg->gui->buildView = new stdClass();
+$tlCfg->gui->buildView->pagination = new stdClass();
+$tlCfg->gui->buildView->pagination->enabled = true;
+$tlCfg->gui->buildView->pagination->length = '[20, 40, 60, -1], [20, 40, 60, "All"]';
 $tlCfg->gui->buildView->itemQtyForTopButton = 10;
 
 
@@ -2027,7 +2030,7 @@ if( !defined('TL_JQUERY') )
 
 if( !defined('TL_DATATABLES_DIR') )
 {
-  define('TL_DATATABLES_DIR','DataTables-1.10.4' );
+  define('TL_DATATABLES_DIR','DataTables-1.10.24' );
 }
 
 /** root of testlink directory location seen through the web server */
